@@ -1,0 +1,165 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.container{
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+    background: #f3f5fc;
+}
+
+.texto{
+    position: absolute;
+    width: 42%;
+    height: 60%;
+    left: 12%;
+    top: 15%;
+    border:none;
+    font-family: Open Sans;
+    font-style: normal;
+    font-size: 32px;
+    line-height: 150%;
+    background-color: #f3f5fc;
+}
+.texto::placeholder{
+    color: #006400;
+}
+
+.texto:focus, .texto:active{
+    border: none;
+    outline: none;
+}
+
+.terminos{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 0px;
+    gap: 8px;
+    width: 80%;
+    left: 12%;
+    top: 80%;
+    position: absolute;
+}
+
+.terminos p {
+    font-family: Open Sans;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 15px;
+    line-height: 150%;
+    color: #495057;
+    opacity: 0.8;
+    flex: none;
+    order: 1;
+    flex-grow: 0;
+}
+
+.buttons{
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 1% 0;
+    position: absolute;
+    gap: 50px;
+    width: 80%;
+    height: 5%;
+    left: 12%;
+    top: 82%;
+}
+.btnencriptar{
+    align-items: center;
+    justify-content: center;
+    padding: 2%;
+    gap: 8px;
+    width: 25%;
+    background-color: #006400;
+    border: 1px solid #ffff;
+    border-radius: 24px;
+    font-family:Open Sans;
+    font-size: 18px;
+    line-height: 19px;
+    text-align: center;
+    color: #ffff;
+}
+
+.btndesencriptar{
+    box-sizing: border-box;
+    flex-direction: row;
+    justify-content: center;
+    padding: 2%;
+    gap: 8px;
+    width: 25%;
+    background-color: #b6fb93;
+    border: 1px solid #008000;
+    border-radius: 24px;
+    font-family: Open Sans;
+    font-size: 18px;
+    line-height: 19px;
+    text-align: center;
+    color: #008000;
+}
+
+.btnencriptar:hover,.btndesencriptar:hover {
+    margin: 0.3%;
+    width: 24.5%;
+    padding: 1.8%;
+}
+
+
+.encriptado{
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    width: 30%;
+    height: 90%;
+    left: 60%;
+    top: 5%;
+    background: #ffff;
+    box-shadow: 0px 24px 32px -8px rgba(0, 0, 0, 0.08);
+    border-radius: 32px;
+}
+
+.msgencriptado{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 1%;
+    position: absolute;
+    gap: 16px;
+    width: 100% ;
+    top: 65%;
+    text-align: center;
+}
+
+.msgencriptado h2{
+    width: 60%;
+    font-family: Open Sans;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 120%;
+    color:#343a40
+}
+
+.msgencriptado p{
+    width: 80%;
+    font-family: Open Sans;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 150%;
+    text-align: center;
+    color: #495057;
+}
+
+.encriptado img{
+    position: absolute;
+    width: 80%;
+    height: 50%;
+    top: 15%;
+}
+

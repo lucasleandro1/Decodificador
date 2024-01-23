@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap" rel="stylesheet">
+    <title>Encriptador de texto</title>
+</head>
+<body>
+    <div class="container">
+        <div class="encriptar">
+            <textarea name="texto" class="texto" id="texto" cols="30" rows="10" placeholder="Digite seu texto aqui"></textarea>
+        </div>
+        <div class="terminos">
+            <p>🛈 Somente letras minúsculas e sem acentos</p>
+        </div>
+        <div class="buttons">
+            <button class="btnencriptar" type="button" onclick="encriptar()" >Encriptar</button>
+            <input class="btndesencriptar" type="button" value="Desencriptar" onclick="desencriptar()" />
+        </div>
+        <div class="encriptado">
+            <img src="img/2918314.jpg" alt="" id="imagem">
+            <div class="msgencriptado" id="msgencriptado">
+                <h2 id="titulo">Nenhum texto encontrado</h2>
+                <p id="paragrafo">Digite algo para encriptar ou desencriptar</p>
+                <!-- <textarea name="msg" id="msg" cols="30" rows="10" class="msg"></textarea> -->
+            </div>
+        </div>
+    </div>
+</body>
+<script src="script.js"></script>
+</html>
