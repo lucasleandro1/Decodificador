@@ -9,8 +9,7 @@ function encriptar(){
     .replace(/i/gi, "imes")
     .replace(/a/gi, "ai")
     .replace(/o/gi, "ober")
-    .replace(/u/gi, "ufat")
-    .replace(/\?/gi, "Qualquer coisa");
+    .replace(/u/gi, "ufat");
 
     if (texto.length != 0) {
         document.getElementById("texto").value = textoCifrado;
@@ -37,7 +36,7 @@ function desencriptar(){
     .replace(/ai/gi, "a")
     .replace(/ober/gi, "o")
     .replace(/ufat/gi, "u")
-    .replace(/Qualquer coisa/gi, "?");
+    .replace(/\?/gi, "Você pode escolher qualquer coisa");
 
     if (texto.length != 0) {
         document.getElementById("texto").value = textoCifrado;
